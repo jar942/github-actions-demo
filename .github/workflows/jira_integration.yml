@@ -26,7 +26,7 @@ jobs:
         issuetype: Bug
         summary: Issue created by ${{ github.actor }} with the title ${{ github.event.issue.title }} on GitHub repository ${{ github.repository }} 
         description: URL to issue- ${{ github.event.issue.html_url }} Issue Summary- ${{ github.event.issue.body }}
-        isAssignToReporter: ${{assignee.displayName}}
+        isAssignToReporter: True
         
     - name: Log created issue
       run: echo "Issue ${{ steps.create.outputs.issue }} was created"
