@@ -5,8 +5,7 @@ name: Jira Card Creation
 on:
 # Controls when the workflow will run
   issues:
-    types: 
-      -opened
+    types: [opened]
 jobs:
   build:
     runs-on: ubuntu-latest
